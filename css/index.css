@@ -1,0 +1,99 @@
+@font-face {
+    font-family: lemon_milk;
+    src: url(../fonts/lemon_milk.otf);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    /* height: 100vh; */
+    /* width: 100vw; */
+    background-color: rgb(255, 255, 255);
+    bottom: 0;
+}
+
+.header {
+    background: linear-gradient(to right, #6f98f0, #f06fa5);
+    color: white;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+}
+
+.header .logo {
+    font-family: lemon_milk;
+    font-size: 48px; 
+}
+
+.header-links {
+    display: flex;
+    gap: 15px;
+    font-size: 18px;
+}
+
+.header-links > * > a {
+    text-decoration: none;
+    color: white;
+}
+
+.compare {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 5px;justify-content: space-between;
+    background: linear-gradient(to right, #6f98f0 50%, #f06fa5 50%);
+}
+
+.person1, .person2 {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.image img{
+    height: auto;
+    width: 100%;
+    display: block;
+}
+
+.versus {
+    top: 50%;
+    left: 50vw;
+    transform: translate(-50%, -75%);
+    position: absolute;
+    color: white;
+    padding: 11px 14px;
+    font-size: 48px;
+    border-radius: 100px;
+    background: linear-gradient(to right, #6f98f0, #f06fa5);
+    font-weight: 600;
+    font-family: lemon_milk;
+    letter-spacing: 5px;
+    z-index: 1;
+}
+
+.name {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.384);
+    color: whitesmoke;
+    padding: 3px;
+    font-size: 18px;
+    width: 50vw;
+    font-weight: 500;
+
+}
+
+.person1 .name {
+    bottom: 0;
+}
+
+.person2 .name {
+    right: 0;
+    text-align: right;
+}
